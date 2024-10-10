@@ -2,21 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Global Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+   <header>
+      <div class="line"></div>
+      <div class="load">
+        <img src="./img/suncloud.gif" alt="suncloud" class="logo" />
+        <h1>global weather</h1>
+        <form class="form">
+          <input type="text" name="query" placeholder="Search city..." />
+          <button type="submit" class="form-btn">Search</button>
+        </form>
+      </div>
+    </header>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <main class="weather-grid">
+      
     </main>
-
-    <load src="./partials/footer.html" />
+    <footer class="footer">
+      <a href="https://github.com/elenka-lev" class="footer-media-link" target="_blank" rel="noopener noreferrer">
+        <img src="./img/github.png" class="img-github" alt="GitHub" width="32" height="32">
+      </a>
+      <a href="https://www.linkedin.com/feed/" class="footer-media-link" target="_blank" rel="noopener noreferrer">
+        <img src="./img/linkedin-logo.png" class="img-github" alt="Linkedin" width="32" height="32">
+      </a>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>
